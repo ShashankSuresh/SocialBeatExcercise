@@ -1,0 +1,13 @@
+{
+  "name": "SocialBeatTest1",
+  "version": "0.0.1",
+  "description": "This is a Social Beat Excercise Project",
+  "repository": "",
+  "author": "Shashank Suresh",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

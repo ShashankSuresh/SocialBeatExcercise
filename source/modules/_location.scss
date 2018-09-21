@@ -1,0 +1,12 @@
+.location {
+    margin-top: 50px;
+    padding-top: 40px;
+    background: linear-gradient(to bottom, $black 60%, $white 50%);
+    font-family: 'Exo', sans-serif;
+    overflow: hidden;
+    height: 600px;
+    .map {
+        background: $white;
+        margin-top: 30px;
+    }
+}
