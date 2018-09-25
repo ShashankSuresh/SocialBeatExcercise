@@ -1,15 +1,26 @@
+// -----------------------------------------
+
+	// Banner Component Styles
+
+// -------------------------------------------
 .banner {
     position: relative;
-    background-image: url("file:///C:/Users/ABC.DESKTOP-MEA8BV7/Downloads/Grunt-SASS-Boilerplate-master/img/bg.jpg");
+    background: url("../img/bg.jpg");
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     width: 100%;
-    height: 80%;
+    height: 700px;
     font-family: 'Exo', sans-serif;
     .heading-container {
         position: absolute;
         top: 80px;
+        @include breakpoint(600) {
+            position: initial;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
         span {
             display: block;
             margin-bottom: 10px;
@@ -19,18 +30,48 @@
             font-size: 28px;
             color: $white;
             @include font-weight(semi-bold);
+            @include breakpoint(768) { 
+                font-size: 22px;
+            }
         }
         .sub-heading {
             font-size: 22px;
             color: $white;
+            overflow: hidden;
+            @include breakpoint(600) { 
+                font-size: 18px;
+            }
+            @include min-breakpoint(768) {
+               width: 380px;
+            }
+            @include min-breakpoint(1024) {
+                width: auto;
+            }
         }
     }
     .form-container {
-        position: absolute;
-        top: 80px;
-        right: 255px;
-        width: 300px;
+        position: initial;
+        width: 40%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: 28px;
+        margin-top: 84px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         background-color: rgba($color: $white, $alpha: 0.6);
+        @include min-breakpoint(1024) {
+            width: 30%;
+        }
+        @include breakpoint(767) {
+            width: 100%;
+            margin: 40px auto;
+        }
         input, select {
             display: block;
             margin: 20px;
@@ -56,6 +97,7 @@
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 500;
+            width: 100%;
             @include font-weight(semi-bold);
         }
         button {

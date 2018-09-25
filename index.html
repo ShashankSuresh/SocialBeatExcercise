@@ -12,18 +12,32 @@
 <body>
     <!-- Header Start -->
     <header>
-        <div class="header container">
-            <a href="#default" class="logo"><img src="img/socialbeat.png" alt="logo"></a>
+        <div class="nav header container">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <a href="#default" class="logo"><img src="img/socialbeat.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
             <div class="nav-container">
                 <div class="phone">
                     <a href="#" class=""><i class="fab fa-whatsapp-square whatsapp"></i>+91 9910 00000</a>
                 </div>
-                <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-links">
+                    <a href="#" class="whatsapp-duplicate"><i class="fab fa-whatsapp-square"></i>+91 9910 00000</a>
                     <a href="#" class="active">Projects</a>
                     <a href="#" class="">Amenities</a>
                     <a href="#" class="">Location</a>
                 </div>
             </div>
+
         </div>
     </header>
     <!-- Header End -->
@@ -57,7 +71,7 @@
         <!-- Amenities Start -->
         <section class="amenities">
             <div class="container">
-                <h2 class="section-heading">amenities</h2>
+                <h2 class="section-heading light-edges">amenities</h2>
                 <div class="list">
                     <div class="item-container">
                         <div class="items">
@@ -91,7 +105,7 @@
         <!-- Location Start -->
         <section class="location">
             <div class="container">
-                <h2 class="section-heading text-color-white">Location</h2>
+                <h2 class="section-heading text-color-white dark-edges">Location</h2>
                 <h2 class="section-sub-heading">lorem ipsum is simply a dummy text of the printing and typesetting
                     industry</h2>
             </div>
@@ -110,4 +124,5 @@
 <script src="fontawesome/js/all.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyAqOS4BWx9S8JfjuJ2ISKUSbrrg2Ze2Q6M"></script>
 <script src="js/main.js"></script>
+
 </html>
